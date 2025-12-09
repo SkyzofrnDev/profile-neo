@@ -1,0 +1,50 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+.jakarta {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+:root {
+  --text-default: #1e1e1e;
+  --primary: #4285f4;
+  --secondary: #f4b400;
+  --tertiary: #0f9d58;
+  --background-dark: #1f1f1f;
+  --background: #f4f4f4;
+}
+
+@layer utilities {
+  .text-primary {
+    color: var(--primary);
+  }
+  .text-secondary {
+    color: var(--secondary);
+  }
+  .text-tertiary {
+    color: var(--tertiary);
+  }
+  .text-default {
+    color: var(--text-default);
+  }
+
+  .bg-primary {
+    background-color: var(--primary);
+  }
+  .bg-secondary {
+    background-color: var(--secondary);
+  }
+  .bg-tertiary {
+    background-color: var(--tertiary);
+  }
+  .bg-default {
+    background-color: var(--background);
+  }
+  .bg-dark {
+    background-color: var(--background-dark);
+  }
+}
