@@ -1,11 +1,12 @@
 import React from 'react'
-import { Hero, Stats } from './Layout/Index'
+import { About, Hero, Stats } from './Layout/Index'
 
 const App = () => {
   return (
-    <div className='bg-default h-screen flex flex-col'>
+    <div className='bg-default flex flex-col'>
         <Hero  />
         <Stats/>
+        <About/>
     </div>
   )
 }
