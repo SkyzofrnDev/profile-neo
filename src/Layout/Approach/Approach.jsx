@@ -2,7 +2,7 @@ import React from "react";
 
 const Approach = () => {
   return (
-    <div className="mt-20 w-full max-w-full px-24 flex flex-col justify-center items-center text-center">
+    <div className="my-56 w-full max-w-full px-24 flex flex-col justify-center items-center text-center">
       <p className="font-semibold text-default text-5xl">
         Pendekatan kami pada klien
       </p>
@@ -41,6 +41,32 @@ const Approach = () => {
           >
             <p className="text-2xl text-white font-semibold">1</p>
           </div>
+        </div>
+      </div>
+      <div className="flex px-16 gap-56">
+        <div className="w-1/4">
+          <p className="text-4xl font-semibold my-5">Inovatif</p>
+          <p className="font-medium text-xl">
+            Lorem ipsum dolor sit amet consectetur. Urna enim a porttitor sit
+            pellentesque imperdiet aliquam. Vulputate quam id faucibus elementum
+            molestie id maecenas pulvinar bibendum.
+          </p>
+        </div>
+        <div className="w-1/4">
+          <p className="text-4xl font-semibold my-5">Inovatif</p>
+          <p className="font-medium text-xl">
+            Lorem ipsum dolor sit amet consectetur. Urna enim a porttitor sit
+            pellentesque imperdiet aliquam. Vulputate quam id faucibus elementum
+            molestie id maecenas pulvinar bibendum.
+          </p>
+        </div>
+        <div className="w-1/4">
+          <p className="text-4xl font-semibold my-5">Inovatif</p>
+          <p className="font-medium text-xl">
+            Lorem ipsum dolor sit amet consectetur. Urna enim a porttitor sit
+            pellentesque imperdiet aliquam. Vulputate quam id faucibus elementum
+            molestie id maecenas pulvinar bibendum.
+          </p>
         </div>
       </div>
     </div>
