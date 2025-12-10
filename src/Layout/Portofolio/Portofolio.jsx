@@ -2,10 +2,10 @@ import React from "react";
 
 const Portofolio = () => {
   return (
-    <div className="bg-dark my-24 rounded-[5rem] px-24 py-20 mx-10" >
+    <div className="bg-dark my-24 rounded-[5rem] px-24 py-20 mx-10 " >
       
       {/* GRID 2 KOLOM */}
-      <div className="grid h-full grid-cols-1 lg:grid-cols-2 gap-16">
+      <div className="grid h-full grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
         {/* LEFT CONTENT */}
         <div>
@@ -52,6 +52,12 @@ const Portofolio = () => {
               Web Portofolio PT Neo One Global Innovasi
             </p>
             <p className="mt-6 text-xl lg:text-2xl">Tech Stack</p>
+            <div className="flex gap-5 mt-5">
+                <img src="react.svg" alt="" loading="lazy" />
+                <img src="react.svg" alt="" loading="lazy" />
+                <img src="react.svg" alt="" loading="lazy" />
+
+            </div>
           </div>
         </div>
 

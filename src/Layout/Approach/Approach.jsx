@@ -2,7 +2,7 @@ import React from "react";
 
 const Approach = () => {
   return (
-    <div className="my-56 w-full max-w-full px-24 flex flex-col justify-center items-center text-center">
+    <div className="mt-56 w-full max-w-full px-24 flex flex-col justify-center items-center text-center">
       <p className="font-semibold text-default text-5xl">
         Pendekatan kami pada klien
       </p>
