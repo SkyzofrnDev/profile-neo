@@ -1,5 +1,5 @@
 import React from 'react'
-import { About, Approach, Hero, Portofolio, Ratings, Stats } from './Layout/Index'
+import { About, Approach, Hero, Portofolio, Ratings, Start, Stats } from './Layout/Index'
 
 const App = () => {
   return (
@@ -10,6 +10,7 @@ const App = () => {
         <Approach/>
         <Ratings/>
         <Portofolio/>
+        <Start/>
     </div>
   )
 }
