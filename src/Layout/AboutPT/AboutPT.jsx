@@ -72,7 +72,7 @@ const About = () => {
           className="w-1/3 h-[48vh] rounded-4xl"
         />
         <div className="py-10 px-14 flex flex-col gap-y-10 bg-white rounded-4xl ">
-          <div className="bg-primary w-24 h-24 justify-center items-center flex rounded-full">
+          <div className="bg-tertiary w-24 h-24 justify-center items-center flex rounded-full">
             <p className="text-white font-semibold text-3xl">01</p>
           </div>
           <p className="font-semibold text-5xl">Website Dev</p>
