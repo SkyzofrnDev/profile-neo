@@ -1,5 +1,6 @@
-import React from "react";
-import { Button } from "../../Components/Index";
+import React, { useEffect } from "react";
+import { BlurText, Button } from "../../Components/Index";
+import Aos from "aos";
 
 const Card = ({ data, title, desc }) => {
   return (
@@ -12,11 +13,18 @@ const Card = ({ data, title, desc }) => {
 };
 
 const Start = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 800, // durasi animasi (ms)
+      easing: "ease-in-out",
+      once: true, // animasi jalan sekali
+      offset: 100, // jarak trigger dari viewport
+    });
+  }, []);
   return (
     <div className="mt-56 grid grid-cols-3 gap-y-40 place-items-center pb-26">
-
       {/* kiri atas */}
-      <div className="-translate-y-28">
+      <div data-aos="fade-up" data-aos-delay="150" className="-translate-y-28">
         <Card
           data="10+"
           title="UMKM terbantu"
@@ -27,16 +35,21 @@ const Start = () => {
       {/* tengah */}
       <div className="text-center translate-y-36 flex items-center flex-col">
         <p className="text-5xl text-default font-semibold leading-relaxed">
-          Ready To Start The Project?
+          <BlurText text="Ready To Start The Project?" />
         </p>
         <p className="text-2xl text-[#8f8f8f] mt-10 my-10">
-          Let’s discuss how we can help you achieve your success
+          <BlurText
+            text="Let’s discuss how we can help you achieve your success
+"
+          />
         </p>
-        <Button text="Penawaran" bg="bg-primary"/>
+        <div data-aos="fade-up" data-aos-delay="1050">
+        <Button text="Penawaran" bg="bg-primary" />
+        </div>
       </div>
 
       {/* kanan atas */}
-      <div className="translate-y-16">
+      <div data-aos="fade-up" data-aos-delay="350" className="translate-y-16">
         <Card
           data="100%"
           title="Generasi muda bangsa"
@@ -45,7 +58,7 @@ const Start = () => {
       </div>
 
       {/* kiri bawah */}
-      <div className="translate-y-10">
+      <div data-aos="fade-up" data-aos-delay="650" className="translate-y-10">
         <Card
           data="100%"
           title="Klien kami puas"
@@ -57,12 +70,8 @@ const Start = () => {
       <div></div>
 
       {/* kanan bawah */}
-      <div className="translate-y-20">
-        <img
-          src="hero-img.png"
-          className="rounded-3xl w-96"
-          alt="team"
-        />
+      <div data-aos="fade-up" data-aos-delay="1050" className="translate-y-20">
+        <img src="hero-img.png" className="rounded-3xl w-96" alt="team" />
       </div>
     </div>
   );

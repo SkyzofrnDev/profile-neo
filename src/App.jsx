@@ -1,20 +1,15 @@
-import React from 'react'
-import { About, Approach, Contact, Footer, Hero, Portofolio, Ratings, Start, Stats } from './Layout/Index'
-
+import React from "react";
+import { Route, Routes } from "react-router";
+import Home from "./Pages/Home";
+import About from "./Pages/About"
 const App = () => {
   return (
-    <div className='bg-default flex flex-col'>
-        <Hero  />
-        <Stats/>
-        <About/>
-        <Approach/>
-        <Ratings/>
-        <Portofolio/>
-        <Start/>
-        <Contact/>
-        <Footer/>
-    </div>
-  )
-}
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      </Routes>
+  );
+};
 
-export default App
+export default App;
