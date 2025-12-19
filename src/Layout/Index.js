@@ -1,6 +1,6 @@
 export { default as Hero } from './Herosection/Hero'
 export { default as Stats } from './CountStats/Stats'
-export { default as About } from './About/About'
+export { default as AboutPT } from './AboutPT/AboutPT'
 export { default as Approach } from './Approach/Approach'
 export { default as Ratings } from './Ratings/Ratings'
 export { default as Portofolio } from './Portofolio/Portofolio'

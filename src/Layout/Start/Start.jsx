@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
-import { BlurText, Button } from "../../Components/Index";
+import { BlurText, Button, CountText } from "../../Components/Index";
 import Aos from "aos";
 
-const Card = ({ data, title, desc }) => {
+const Card = ({ data, title, desc, symbol }) => {
   return (
     <div className="px-10 py-10 bg-white w-96 rounded-3xl text-center ">
-      <p className="text-7xl font-semibold">{data}</p>
+      <p className="text-7xl font-semibold"><CountText to={data}/>{symbol}</p>
       <p className="font-medium text-2xl my-3">{title}</p>
       <p className="text-xl">{desc}</p>
     </div>
@@ -26,7 +26,8 @@ const Start = () => {
       {/* kiri atas */}
       <div data-aos="fade-up" data-aos-delay="150" className="-translate-y-28">
         <Card
-          data="10+"
+          data="10"
+          symbol={"+"}
           title="UMKM terbantu"
           desc="Banyak umkm yang usahanya sukses dan terbantu berkat digitalisasi."
         />
@@ -34,7 +35,7 @@ const Start = () => {
 
       {/* tengah */}
       <div className="text-center translate-y-36 flex items-center flex-col">
-        <p className="text-5xl text-default font-semibold leading-relaxed">
+        <p className="text-5xl text-default font-semibold leading-relaxed text-center">
           <BlurText text="Ready To Start The Project?" />
         </p>
         <p className="text-2xl text-[#8f8f8f] mt-10 my-10">
@@ -52,6 +53,7 @@ const Start = () => {
       <div data-aos="fade-up" data-aos-delay="350" className="translate-y-16">
         <Card
           data="100%"
+          symbol={"%"}
           title="Generasi muda bangsa"
           desc="Tim kami sepenuhnya didominasi generasi muda ahli di bidangnya."
         />
@@ -61,6 +63,7 @@ const Start = () => {
       <div data-aos="fade-up" data-aos-delay="650" className="translate-y-10">
         <Card
           data="100%"
+          symbol={"%"}
           title="Klien kami puas"
           desc="Seluruh klien puas dengan hasil yang diberikan."
         />

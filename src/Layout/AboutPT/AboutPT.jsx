@@ -86,7 +86,7 @@ const About = () => {
 
           <div className="group inline-flex items-center gap-5 text-xl font-semibold text-black/80 cursor-pointer">
             <Link
-              to="/"
+              to="/about#webdev"
               className="
       relative
       after:content-['']
@@ -147,7 +147,7 @@ const About = () => {
           </p>
           <div className="group inline-flex items-center gap-5 text-xl font-semibold text-black/80 cursor-pointer">
             <Link
-              to="/"
+              to="/about#edu"
               className="
       relative
       after:content-['']

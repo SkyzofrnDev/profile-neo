@@ -1,12 +1,12 @@
 import React from 'react'
-import { About, Approach, Contact, Footer, Hero, Portofolio, Ratings, Start, Stats } from '../Layout/Index'
+import {AboutPT, Approach, Contact, Footer, Hero, Portofolio, Ratings, Start, Stats } from '../Layout/Index'
 
 const Home = () => {
   return (
     <div className='bg-default flex flex-col'>
         <Hero  />
         <Stats/>
-        <About/>
+        <AboutPT/>
         <Approach/>
         <Ratings/>
         <Portofolio/>
