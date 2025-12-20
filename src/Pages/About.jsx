@@ -13,12 +13,16 @@ const About = () => {
             <p className="text-[#7b7b7b]">Company</p>
           </div>
         </div>
-        <div className="py-10 w-2/3 gap-10 mt-28 px-14 flex flex-col gap-y-10 bg-white rounded-4xl ">
+        <div className="py-10 w-2/3 gap-10 mt-28 px-14 flex flex-col bg-white rounded-4xl ">
+        <img src="neo.svg" alt="logo-neo" loading="lazy" className="w-24" />
             <p className="font-semibold text-5xl">
-              <span className="text-primary">Neo</span>
-              <span className="text-secondary">One</span>
+              PT.
+              <span className="text-tertiary"> NeoOne</span>
+              <span className="text-primary"> Global</span>
+              <span className="text-secondary"> Innovasi</span>
+
             </p>
-            <p className="font-medium text-xl">
+            <p className="font-medium text-2xl">
               PT Neo One Global Inovasi adalah perusahaan teknologi yang berdiri
               pada tahun 2023. Sejak awal, kami berdedikasi untuk memberikan
               solusi digital inovatif dan layanan konsultasi IT yang mampu

@@ -14,15 +14,15 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="flex ml-24">
-      <div className="w-3/5 pr-22">
+    <div className='px-10 md:px-0 lg:flex lg:ml-24'>
+      <div className="lg:w-3/5 lg:pr-20">
         <img
           data-aos="fade-down"
           src="/neo.svg"
           alt="neo-logo"
-          className="w-56 h-56"
+          className="w-32 lg:w-56 lg:my-20 my-10"
         />
-        <p className="text-8xl text-default font-bold leading-tight jakarta">
+        <p className="text-6xl md:text-8xl text-default font-bold leading-tight jakarta">
           <span data-aos="fade-up" data-aos-delay="0" className="inline-block">
             Bring your
           </span>{" "}
@@ -60,7 +60,7 @@ const Hero = () => {
         <p
           data-aos="fade"
           data-aos-delay="900"
-          className="text-3xl mt-10 leading-normal"
+          className="text-xl lg:text-3xl mt-10 leading-normal"
         >
           Kami menyediakan solusi untuk kebutuhan digital anda dengan{" "}
           <span className="text-primary">professional</span>{" "}
