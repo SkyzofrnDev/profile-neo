@@ -13,14 +13,14 @@ const About = () => {
             <p className="text-[#7b7b7b]">Company</p>
           </div>
         </div>
-        <div className="py-10 w-2/3 gap-10 mt-28 px-14 flex flex-col bg-white rounded-4xl ">
-        <img src="neo.svg" alt="logo-neo" loading="lazy" className="w-24" />
+        <div className="flex items-center  mt-28  ">
+          <div className="py-10 w-2/3 gap-10 px-14 flex flex-col bg-white rounded-4xl ">
+            <img src="neo.svg" alt="logo-neo" loading="lazy" className="w-24" />
             <p className="font-semibold text-5xl">
               PT.
               <span className="text-tertiary"> NeoOne</span>
               <span className="text-primary"> Global</span>
               <span className="text-secondary"> Innovasi</span>
-
             </p>
             <p className="font-medium text-2xl">
               PT Neo One Global Inovasi adalah perusahaan teknologi yang berdiri
@@ -31,8 +31,14 @@ const About = () => {
               pengembangan solusi custom yang canggih dan berkelanjutan.
             </p>
           </div>
+          <img
+            src="hero-img.png"
+            alt="neo-profile"
+            className="w-1/3  rounded-4xl"
+          />
+        </div>
+
         <div className="flex gap-10 mt-10">
-          
           <div className="py-10 px-14 flex flex-col gap-y-10 bg-white rounded-4xl ">
             <div className="bg-primary w-24 h-24 justify-center items-center flex rounded-full">
               <p className="text-white font-semibold text-3xl">01</p>
