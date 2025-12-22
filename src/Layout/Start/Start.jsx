@@ -24,7 +24,7 @@ const Start = () => {
   return (
     <div className="mt-56 grid grid-cols-3 gap-y-40 place-items-center pb-26">
       {/* kiri atas */}
-      <div data-aos="fade-up" data-aos-delay="150" className="-translate-y-28">
+      <div data-aos="fade-up" data-aos-delay="150" className="-translate-y-16">
         <Card
           data="10"
           symbol={"+"}

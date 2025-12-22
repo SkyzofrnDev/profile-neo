@@ -3,7 +3,7 @@ import {AboutPT, Approach, Contact, Footer, Hero, Portofolio, Ratings, Start, St
 
 const Home = () => {
   return (
-    <div className='bg-default flex flex-col'>
+    <div className='bg-default flex flex-col pb-5'>
         <Hero  />
         <Stats/>
         <AboutPT/>

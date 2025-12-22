@@ -9,7 +9,7 @@ const About = () => {
           <p className="text-default">About</p>
           <p className="text-[#7b7b7b]">Company</p>
         </div>
-        <div className="flex gap-y-4 w-1/3 flex-col">
+        <div className="items-stretch flex gap-y-4 w-1/3 flex-col">
           <p className="text-2xl text-[#7b7b7b] hover:text-[#1e1e1e] duration-300 transition-all">
             Kami adalah rumah website developer yang menciptakan website sesuai
             dengan kebutuhan digtal anda.
@@ -69,7 +69,7 @@ const About = () => {
         <img
           src="hero-img.png"
           alt="neo-profile"
-          className="w-1/3 h-[48vh] rounded-4xl"
+          className="w-1/3 rounded-4xl"
         />
         <div className="py-10 px-14 flex flex-col gap-y-10 bg-white rounded-4xl ">
           <div className="bg-tertiary w-24 h-24 justify-center items-center flex rounded-full">

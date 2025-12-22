@@ -84,8 +84,8 @@ const Contact = () => {
               type="submit"
               className={
                 loading
-                  ? "bg-[#2b5fb3] py-10 mt-10 rounded-3xl"
-                  : "bg-primary py-10 mt-10 rounded-3xl"
+                  ? "bg-[#2b5fb3] py-7 mt-0 rounded-3xl"
+                  : "bg-primary py-7 mt-10 rounded-3xl"
               }
               disabled={loading}
             >

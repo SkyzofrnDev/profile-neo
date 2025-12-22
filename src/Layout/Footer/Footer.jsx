@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 const Footer = () => {
   return (
@@ -62,25 +63,25 @@ const Footer = () => {
         </svg>
       </div>
       <div className="w-full mt-15 px-28 h-0.5 bg-[#8f8f8f] rounded-full "></div>
-      <div className="flex mt-5 justify-between items-center">
+      <div className="flex mt-5 justify-between items-center px-20 pt-5">
         <div className="flex gap-5">
-          <div className="border-2 flex items-center border-[#4d4d4d] p-3 rounded-full">
-            <img src="/Icon/linkedin.svg" alt="instagram" />
-          </div>
-          <div className="border-2  flex items-center border-[#4d4d4d] p-3 rounded-full">
-            <img src="/Icon/ig.svg" alt="instagram" />
-          </div>
-          <div className="border-2  flex items-center border-[#4d4d4d] p-3 rounded-full">
-            <img src="/Icon/twitet.svg" alt="instagram" />
-          </div>
+          <a href="https://instagram.com/neooneid" target="_blank" className="border-2 flex items-center border-[#4d4d4d] p-3 rounded-full">
+            <img src="/Sosmed/linkedin.svg" alt="instagram" />
+          </a>
+          <a href="https://instagram.com/neooneid" target="_blank" className="border-2  flex items-center border-[#4d4d4d] p-3 rounded-full">
+            <img src="/Sosmed/ig.svg" alt="instagram" />
+          </a>
+          <a href="https://instagram.com/neooneid" target="_blank" className="border-2  flex items-center border-[#4d4d4d] p-3 rounded-full">
+            <img src="/Sosmed/twitet.svg" alt="instagram" />
+          </a>
         </div>
         <p className="text-[#4d4d4d] font-semibold text-2xl">
           Copyright © 2025, All rights reserved.
         </p>
         <div className="flex gap-x-22">
-          <p className="text-[#4d4d4d] font-medium text-2xl">Contact</p>
+          <Link to={"/"} className="text-[#4d4d4d] font-medium text-2xl">Contact</Link>
           <p className="text-[#4d4d4d] font-medium text-2xl">
-            Terms & Condition
+            FAQ
           </p>
         </div>
       </div>
