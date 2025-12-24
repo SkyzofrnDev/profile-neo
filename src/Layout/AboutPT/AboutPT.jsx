@@ -16,7 +16,7 @@ const About = () => {
           </p>
           <div className="group inline-flex items-center gap-5 text-xl font-semibold text-black/80 cursor-pointer">
             <Link
-              to="/"
+              to="/about#about"
               className="
       relative
       after:content-['']

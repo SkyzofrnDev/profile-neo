@@ -1,14 +1,28 @@
 import React from "react";
 import { Hero, Stats, AboutPT, Footer } from "../Layout/Index";
-
+import { useLocation } from 'react-router'
+import { useEffect } from "react";
+import { Navbar } from "../Components/Index";
 const About = () => {
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (!hash) return;
+
+    const el = document.querySelector(hash);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [hash]);
+
   return (
     <div className="bg-default">
+      <Navbar/>
       <Hero />
       <Stats />
       <div className="px-24 my-20 ">
         <div className="flex items-center justify-between">
-          <div className="font-semibold text-9xl">
+          <div id="about" className="scroll-mt-12 font-semibold text-9xl">
             <p className="text-default">About</p>
             <p className="text-[#7b7b7b]">Company</p>
           </div>
@@ -42,7 +56,7 @@ const About = () => {
         </div>
 
         <div className="flex flex-col gap-10 mt-10">
-          <div className="py-10 px-14 flex flex-col gap-y-10 bg-white rounded-4xl">
+          <div id="webdev" className="scroll-mt-28 py-10 px-14 flex flex-col gap-y-10 bg-white rounded-4xl">
             <div>
               <img
                 src="/CompanyFam/WebDev.webp"
@@ -64,7 +78,7 @@ const About = () => {
               mendorong pertumbuhan bisnis Anda
             </p>
           </div>
-          <div id="edu" className="py-10 px-14 flex flex-col gap-y-10 bg-white rounded-4xl ">
+          <div id="edu" className="scroll-mt-28 py-10 px-14 flex flex-col gap-y-10 bg-white rounded-4xl ">
             <img
               src="/CompanyFam/WebDev.webp"
               className="rounded-lg h-96 w-full object-cover"
