@@ -15,25 +15,18 @@ const ReviewCard = ({ review, index, hoveredCard, setHoveredCard }) => {
       {/* Tanda kutip atas */}
       <div className="absolute top-0 left-2 pointer-events-none">
         <span
-          className="text-6xl text-primary opacity-15 font-bold leading-none block"
-          style={{ fontFamily: "serif", lineHeight: "0.8" }}
+          className="m-3 text-6xl text-primary jakarta font-bold leading-none block"
         >
-          "
+          <img src="./Icon/quote.svg"></img>
         </span>
       </div>
 
       {/* Tanda kutip bawah */}
       <div className="absolute bottom-0 right-2 pointer-events-none">
         <span
-          className="text-6xl text-primary opacity-15 font-bold leading-none block"
-          style={{
-            fontFamily: "serif",
-            lineHeight: "0.8",
-            transform: "rotate(180deg)",
-            display: "inline-block",
-          }}
+          className="m-3 mb-5 rotate-180 text-6xl text-primary jakarta font-bold leading-none block"
         >
-          "
+          <img src="./Icon/quote.svg"></img>
         </span>
       </div>
 

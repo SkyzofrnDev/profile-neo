@@ -13,10 +13,10 @@ const Footer = () => {
       </div>
       <div>
         <ul className="flex gap-20 ml-10 mt-5 text-xl">
-          <li>Home</li>
-          <li>About</li>
-          <li>Project</li>
-          <li>Contact</li>
+          <Link to={"/#home"}>Home</Link>
+          <Link to={"/#about"}>About</Link>
+          <Link to={"/#portofolio"}>Project</Link>
+          <Link to={"/#contact"}>Contact</Link>
         </ul>
       </div>
       <div className="flex gap-20 items-center justify-center mt-20 ">

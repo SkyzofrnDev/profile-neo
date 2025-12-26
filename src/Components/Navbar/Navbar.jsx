@@ -47,10 +47,10 @@ const Navbar = () => {
         debug={false}
       >
         <div className="flex w-full text-white text-xl font-medium items-center justify-between px-20">
-            <NavLink to="/" title="Home" delay={700} />
-            <NavLink to="/" title="About" delay={800} />
-            <NavLink to="/" title="Portofolio" delay={900} />
-            <NavLink to="/" title="Contact" delay={1100} />
+            <NavLink to="/#home" title="Home" delay={700} />
+            <NavLink to="/#about" title="About" delay={800} />
+            <NavLink to="/#portofolio" title="Portofolio" delay={900} />
+            <NavLink to="/#contact" title="Contact" delay={1100} />
         </div>
       </GlassElement>
     </div>
