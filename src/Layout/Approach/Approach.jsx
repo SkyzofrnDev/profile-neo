@@ -2,8 +2,8 @@ import React from "react";
 
 const Approach = () => {
   return (
-    <div className="mt-56 w-full max-w-full px-24 flex flex-col justify-center items-center text-center">
-      <p className="font-semibold text-default text-5xl">
+    <div className="mt-20 lg:mt-56 w-full max-w-full px-12 g:px-24 flex flex-col justify-center items-center text-center">
+      <p className="text-3xl font-semibold text-default lg:text-5xl">
         Pendekatan kami pada klien
       </p>
       <div className="flex w-3/4 justify-evenly items-center mt-20">

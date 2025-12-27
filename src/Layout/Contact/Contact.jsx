@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { sendEmail } from "../../Services/mailjs.config";
 import { Snackbar } from "../../Components/Index";
+import useBreakpoint from "../../Hooks/useBreakpoint";
 
 const Contact = () => {
   const [loading, setLoading] = useState(false);
@@ -28,26 +29,28 @@ const Contact = () => {
       setLoading(false);
     }
   };
-
+  const {isMobile,isDesktop,isTablet} = useBreakpoint();
   return (
-    <div className="mx-20 my-24 flex flex-col items-center">
-      <p className="font-semibold text-6xl">
+    <div className="mt-10 mx-5 lg:mx-20 lg:my-24 flex flex-col items-center">
+      <p className="font-semibold text-6xl text-center leading-relaxed">
         Contact <span className="bg-tertiary text-white px-2">Company</span>
       </p>
-      <div className="flex mt-28 w-full gap-x-64">
-        <img
-          src="Contact.png"
-          alt="contact"
-          loading="lazy"
-          className="w-180 h-170"
-        />
+      <div className="flex mt-10 lg:mt-28 w-full gap-x-64">
+        {isDesktop && (
+          <img
+            src="Contact.png"
+            alt="contact"
+            loading="lazy"
+            className="w-180 h-170"
+          />
+        )}
         <form
           onSubmit={handleSubmit}
           className="w-full gap-y-10 h-full flex flex-col"
           name="form-contact"
         >
-          <div className="flex flex-col gap-y-5 w-full">
-            <p className="font-medium text-4xl">
+          <div className="flex flex-col gap-y-2 lg:gap-y-5 w-full">
+            <p className="font-medium text-2xl lg:text-4xl">
               Full Name <span className="text-red-500">*</span>
             </p>
             <input
@@ -59,7 +62,7 @@ const Contact = () => {
             />
           </div>
           <div className="flex flex-col gap-y-5 w-full">
-            <p className="font-medium text-4xl">
+            <p className="font-medium text-2xl lg:text-4xl">
               Your Email <span className="text-red-500">*</span>
             </p>
             <input
@@ -71,7 +74,7 @@ const Contact = () => {
             />
           </div>
           <div className="flex flex-col gap-y-5 w-full">
-            <p className="font-medium text-4xl">
+            <p className="font-medium text-2xl lg:text-4xl">
               Message <span className="text-red-500">*</span>
             </p>
             <textarea
@@ -84,12 +87,12 @@ const Contact = () => {
               type="submit"
               className={
                 loading
-                  ? "bg-[#2b5fb3] py-7 mt-0 rounded-3xl"
-                  : "bg-primary py-7 mt-10 rounded-3xl"
+                  ? "bg-[#2b5fb3] py-5 lg:py-7 lg:mt-10 rounded-3xl"
+                  : "bg-primary py-5 lg:py-7 lg:mt-10 rounded-2xl lg:rounded-3xl"
               }
               disabled={loading}
             >
-              <p className="text-3xl font-semibold text-white">
+              <p className="text-xl lg:text-3xl font-semibold text-white">
                 {loading ? "Mengirim..." : "Kirim"}
               </p>
             </button>

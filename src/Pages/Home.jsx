@@ -28,7 +28,7 @@ const Home = () => {
   const { isMobile, isTablet, isDesktop } = useBreakpoint();
 
   return (
-    <div className="bg-default flex flex-col pb-5">
+    <div className="bg-default flex flex-col lg:pb-5">
       {(isDesktop || isTablet) && <Navbar />}
       <div id="home">
         <Hero />
