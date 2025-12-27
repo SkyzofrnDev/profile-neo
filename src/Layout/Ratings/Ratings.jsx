@@ -193,18 +193,16 @@ const Ratings = () => {
   };
 
   return (
-    <div className="my-56 w-full max-w-full px-24 flex flex-col items-center">
-      <p className="font-semibold text-default text-5xl mb-20">
+    <div className="text-center px-10 mt-12 lg:my-56 w-full max-w-full lg:px-24 flex flex-col items-center">
+      <p className="text-3xl font-semibold text-default lg:text-5xl mb-20">
         Apa Kata Klien Kami
       </p>
-
       <div
         className="w-full relative py-12 flex flex-col gap-12"
         style={{ overflowX: "hidden", overflowY: "visible" }}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        {/* Gradient fade kiri */}
         <div
           className="absolute left-0 top-0 bottom-0 w-48 z-20 pointer-events-none"
           style={{
@@ -212,8 +210,6 @@ const Ratings = () => {
               "linear-gradient(to right, var(--background) 0%, rgba(244, 244, 244, 0.8) 50%, transparent 100%)",
           }}
         />
-
-        {/* Gradient fade kanan */}
         <div
           className="absolute right-0 top-0 bottom-0 w-48 z-20 pointer-events-none"
           style={{

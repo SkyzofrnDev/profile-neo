@@ -27,8 +27,8 @@ const Hero = () => {
   }, [hash]);
 
   return (
-    <div className="px-7 lg:px-0 lg:flex lg:ml-24">
-      <div className="lg:w-3/5 lg:pr-20">
+    <div className="px-7 lg:px-0 flex lg:ml-24">
+      <div className="flex flex-col gap-y-5 lg:w-3/5 lg:pr-20">
         <img
           data-aos="fade-down"
           src="/neo.svg"
@@ -80,7 +80,7 @@ const Hero = () => {
           <span className="text-secondary">website</span> yang sesuai dengan
           kebutuhan.
         </p>
-        <div className="flex flex-wrap gap-x-5">
+        <div className="flex flex-wrap lg:mt-10 gap-x-5 mb-10">
           <div data-aos="fade-up" data-aos-delay="200">
             <Button bg="bg-primary" text="Penawaran" />
           </div>

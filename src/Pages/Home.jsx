@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import {
   AboutPT,
   Approach,
+  ApproachMobile,
   Contact,
   Footer,
   Hero,
@@ -37,7 +38,10 @@ const Home = () => {
       <div id="about">
         <AboutPT />
       </div>
+      {(isDesktop || isTablet) && (
       <Approach />
+      )}
+      {isMobile && <ApproachMobile/>}
       <Ratings />
       <div id="portofolio">
         <Portofolio />
