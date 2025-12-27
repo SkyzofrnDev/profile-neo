@@ -80,7 +80,7 @@ const Hero = () => {
           <span className="text-secondary">website</span> yang sesuai dengan
           kebutuhan.
         </p>
-        <div className="lg:flex gap-x-5 mt-10">
+        <div className="flex flex-wrap gap-x-5">
           <div data-aos="fade-up" data-aos-delay="200">
             <Button bg="bg-primary" text="Penawaran" />
           </div>

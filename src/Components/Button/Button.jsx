@@ -5,7 +5,7 @@ const Button = ({ bg, text }) => {
   return (
     <Link
       to="/home"
-      className={`my-5 md:mt-0 px-2 py-2 md:px-3 md:pl-10 md:py-3 flex items-center gap-2 md:gap-5 text-white md:text-2xl tracking-wide font-medium ${bg} rounded-full w-fit group`}
+      className={`my-2 sm:my-5 md:mt-0 px-2 py-2 md:px-3 md:pl-10 md:py-3 flex items-center gap-2 md:gap-5 text-white md:text-2xl tracking-wide font-medium ${bg} rounded-full w-fit group`}
     >
       {text}
 
