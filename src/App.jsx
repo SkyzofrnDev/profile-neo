@@ -4,6 +4,7 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Test from "./Pages/Test";
 import Test2 from "./Pages/Test2";
+import { Navbar } from "./Components/Index";
 const App = () => {
   return (
     <Routes>

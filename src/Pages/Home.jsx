@@ -9,9 +9,10 @@ import {
   Portofolio,
   Ratings,
   Start,
+  StartMobile,
   Stats,
 } from "../Layout/Index";
-import { Navbar } from "../Components/Index";
+import { Navbar, NavbarMobile } from "../Components/Index";
 import { useLocation } from "react-router";
 import useBreakpoint from "../Hooks/useBreakpoint";
 
@@ -30,6 +31,7 @@ const Home = () => {
 
   return (
     <div className="bg-default flex flex-col lg:pb-5">
+      {isMobile && <NavbarMobile/>}
       {(isDesktop || isTablet) && <Navbar />}
       <div id="home">
         <Hero />
@@ -38,15 +40,14 @@ const Home = () => {
       <div id="about">
         <AboutPT />
       </div>
-      {(isDesktop || isTablet) && (
-      <Approach />
-      )}
-      {isMobile && <ApproachMobile/>}
+      {(isDesktop || isTablet) && <Approach />}
+      {isMobile && <ApproachMobile />}
       <Ratings />
       <div id="portofolio">
         <Portofolio />
       </div>
-      <Start />
+      {(isDesktop || isTablet) && <Start />}
+      {isMobile && <StartMobile/>}
       <div id="contact" className="-scroll-mt-28">
         <Contact />
       </div>

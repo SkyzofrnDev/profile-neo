@@ -33,7 +33,7 @@ const Hero = () => {
           data-aos="fade-down"
           src="/neo.svg"
           alt="neo-logo"
-          className="w-20 lg:w-56 lg:my-20 my-5 md:my-10"
+          className="hidden md:block w-20 lg:w-56 lg:my-20 my-5 md:my-10"
         />
         <p className="text-5xl md:text-6xl lg:text-8xl text-default font-bold leading-tight jakarta">
           <span data-aos="fade-up" data-aos-delay="0" className="inline-block">

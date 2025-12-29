@@ -2,7 +2,7 @@ import React from "react";
 
 const Portofolio = () => {
   return (
-    <div className="bg-dark my-24 rounded-[5rem] px-24 py-20 mx-10 " >
+    <div className="bg-dark mt-10 px-5 py-10 lg:my-24 lg:rounded-[5rem] lg:px-24 lg:py-20 lg:mx-10 " >
       
       {/* GRID 2 KOLOM */}
       <div className="grid h-full grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -15,11 +15,11 @@ const Portofolio = () => {
           </div>
 
           {/* Heading */}
-          <div className="mt-10">
-            <h1 className="text-white font-semibold text-7xl lg:text-8xl leading-none">
+          <div className="mt-10 leading-none text-5xl md:text-7xl lg:text-8xl font-semibold">
+            <h1 className="text-white ">
               Portofolio
             </h1>
-            <h1 className="text-[#8f8f8f] font-semibold text-7xl lg:text-8xl leading-none">
+            <h1 className="text-[#8f8f8f] ">
               Perusahaan
             </h1>
           </div>
