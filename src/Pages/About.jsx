@@ -75,7 +75,7 @@ const About = () => {
                 loading="lazy"
               ></img>
             </div>
-            <div className="flex items-center">
+            <div className="flex items-center gap-x-10">
               <div className="hidden lg:flex bg-primary w-24 h-24 justify-center items-center rounded-full">
                 <p className="text-white font-semibold lg:text-3xl">01</p>
               </div>
@@ -99,12 +99,10 @@ const About = () => {
               className="rounded-lg lg:h-96 w-full object-cover"
               loading="lazy"
             ></img>
-            <div className="flex items-center gap-10">
-              {(isDesktop || isTablet) && (
-                <div className="bg-secondary w-24 h-24 justify-center items-center flex rounded-full">
+            <div className="flex items-center gap-x-10">
+                <div className="hidden bg-secondary w-24 h-24 justify-center items-center lg:flex rounded-full">
                   <p className="text-white font-semibold text-3xl">02</p>
                 </div>
-              )}
               <p className="font-semibold text-3xl lg:text-5xl">Edu Tech</p>
             </div>
             <p className="font-medium lg:text-2xl">
