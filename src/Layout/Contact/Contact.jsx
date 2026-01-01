@@ -35,18 +35,18 @@ const Contact = () => {
       <p className="font-semibold text-6xl text-center leading-relaxed">
         Contact <span className="bg-tertiary text-white px-2">Company</span>
       </p>
-      <div className="flex mt-10 lg:mt-28 w-full gap-x-64">
-        {isDesktop && (
+      <div className="flex mt-10 lg:mt-28 w-full gap-x-32 2xl:gap-x-64">
+        {(isDesktop) && (
           <img
             src="Contact.png"
             alt="contact"
             loading="lazy"
-            className="w-180 h-170"
+            className="w-1/2 h-1/2"
           />
         )}
         <form
           onSubmit={handleSubmit}
-          className="w-full gap-y-10 h-full flex flex-col"
+          className="w-full `lg:w-1/2 gap-y-10 h-full flex flex-col"
           name="form-contact"
         >
           <div className="flex flex-col gap-y-2 lg:gap-y-5 w-full">

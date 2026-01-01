@@ -15,7 +15,7 @@ const Portofolio = () => {
           </div>
 
           {/* Heading */}
-          <div className="mt-10 leading-none text-5xl md:text-7xl lg:text-8xl font-semibold">
+          <div className="mt-10 leading-none text-5xl xl:text-7xl 2xl:text-8xl font-semibold">
             <h1 className="text-white ">
               Portofolio
             </h1>

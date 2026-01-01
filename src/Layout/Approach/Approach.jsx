@@ -46,21 +46,21 @@ const Approach = () => {
       <div className="flex px-16 gap-56">
         <div className="w-1/4">
           <p className="text-4xl font-semibold my-5">Inovatif</p>
-          <p className="font-medium text-xl">
+          <p className="font-medium text-md 2xl:text-xl">
             Menciptakan produk yang dibangun menggunakan teknologi yang canggih
             untuk mencapai efisiensi berdasarkan kebutuhan yang relevan.
           </p>
         </div>
         <div className="w-1/4">
           <p className="text-4xl font-semibold my-5">Quality</p>
-          <p className="font-medium text-xl">
+          <p className="font-medium text-md 2xl:text-xl">
             Berorientasi pada hasil yang maksimal namun dibangun dengan struktur
             fundamental yang kokoh untuk mencapai produk yang berkualitas.
           </p>
         </div>
         <div className="w-1/4">
           <p className="text-4xl font-semibold my-5">Collaboration</p>
-          <p className="font-medium text-xl">
+          <p className="font-medium text-md 2xl:text-xl">
             Menghubungkan antara kami dengan Anda. Kami bekerja dalam tim
             memastikan semuanya saling berkesinambungan.
           </p>

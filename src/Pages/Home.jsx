@@ -31,8 +31,8 @@ const Home = () => {
 
   return (
     <div className="bg-default flex flex-col lg:pb-5">
-      {isMobile && <NavbarMobile/>}
-      {(isDesktop || isTablet) && <Navbar />}
+      {(isMobile || isTablet) && <NavbarMobile/>}
+      {(isDesktop) && <Navbar />}
       <div id="home">
         <Hero />
       </div>
@@ -40,14 +40,14 @@ const Home = () => {
       <div id="about">
         <AboutPT />
       </div>
-      {(isDesktop || isTablet) && <Approach />}
-      {isMobile && <ApproachMobile />}
+      {(isDesktop) && <Approach />}
+      {(isMobile|| isTablet) && <ApproachMobile />}
       <Ratings />
       <div id="portofolio">
         <Portofolio />
       </div>
-      {(isDesktop || isTablet) && <Start />}
-      {isMobile && <StartMobile/>}
+      {(isDesktop) && <Start />}
+      {(isMobile|| isTablet) && <StartMobile/>}
       <div id="contact" className="-scroll-mt-28">
         <Contact />
       </div>

@@ -1,18 +1,21 @@
 import React from "react";
-import { Route, Routes } from "react-router";
-import Home from "./Pages/Home";
-import About from "./Pages/About";
-import Test from "./Pages/Test";
-import Test2 from "./Pages/Test2";
-import { Navbar } from "./Components/Index";
+import { Routes, Route } from "react-router";
+import { routesConfig } from "./Config/Rooting";
+import { NotFound } from "./Layout/Index";
+import UnderConstruction from "./Layout/UnderConstruction/UnderConstruction";
+
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/home" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/test" element={<Test />} />
-      <Route path="/test2" element={<Test2 />} />
+      {routesConfig.map(({ path, element, maintenance }) => (
+        <Route
+          key={path}
+          path={path}
+          element={maintenance ? <UnderConstruction /> : element}
+        />
+      ))}
+
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 };

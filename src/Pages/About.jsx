@@ -70,8 +70,8 @@ const About = () => {
           >
             <div>
               <img
-                src="/CompanyFam/WebDev.webp"
-                className="rounded-lg lg:h-96 w-full object-cover"
+                src="/CompanyFam/2.webp"
+                className="rounded-lg lg:h-96 w-full object-cover bg-center"
                 loading="lazy"
               ></img>
             </div>

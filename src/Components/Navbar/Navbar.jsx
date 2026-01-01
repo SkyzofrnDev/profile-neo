@@ -39,7 +39,7 @@ const Navbar = () => {
     <div className="pt-10 justify-center flex w-full items-center rounded-bl-xl right-0 bg- text-white fixed  z-50">
       <GlassElement
         width={700}
-        height={100}
+        height={80}
         radius={100}
         depth={50}
         blur={5}

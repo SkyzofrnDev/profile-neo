@@ -46,7 +46,8 @@ const NavbarMobile = () => {
     <>
       <div
         className={`
-          sticky top-0 z-50
+          fixed top-0 z-50
+          w-full
           flex items-center justify-between
           px-5 py-6
           transition-colors duration-300
@@ -58,7 +59,7 @@ const NavbarMobile = () => {
         {/* Hamburger */}
         <button
   onClick={() => setOpen(!open)}
-  className="relative w-6 h-6 flex items-center justify-center"
+  className="absolute w-6 h-6 flex right-6 items-center justify-center"
 >
   {/* TOP BAR */}
   <span
