@@ -70,11 +70,11 @@ const Footer = () => {
       <div className="flex flex-col gap-y-2 lg:flex-row mt-5 justify-between items-center lg:px-20 pt-5">
         <div className="flex  gap-5">
           <a
-            href="https://instagram.com/neooneid"
+            href="https://wa.me/6281936778959?text=Halo+kami+tertarik+dengan+jasa+anda"
             target="_blank"
             className="border lg:border-2 flex items-center border-[#4d4d4d] p-3 rounded-full"
           >
-            <img src="/Sosmed/linkedin.svg" alt="instagram" />
+            <img src="/Sosmed/whatsapp.svg" alt="instagram" className="h-8" />
           </a>
           <a
             href="https://instagram.com/neooneid"
@@ -83,19 +83,12 @@ const Footer = () => {
           >
             <img src="/Sosmed/ig.svg" alt="instagram" />
           </a>
-          <a
-            href="https://instagram.com/neooneid"
-            target="_blank"
-            className="border lg:border-2 flex items-center border-[#4d4d4d] p-3 rounded-full"
-          >
-            <img src="/Sosmed/twitet.svg" alt="instagram" />
-          </a>
         </div>
         <p className="text-[#4d4d4d] text-center font-semibold lg:text-2xl">
           Copyright © 2025, All rights reserved.
         </p>
         <div className="flex gap-x-22">
-          <Link to={"/"} className="text-[#4d4d4d] font-medium lg:text-2xl">
+          <Link to={"https://wa.me/6281936778959?text=Halo+kami+tertarik+dengan+jasa+anda"} className="text-[#4d4d4d] font-medium lg:text-2xl">
             Contact
           </Link>
           <p className="text-[#4d4d4d] font-medium lg:text-2xl">FAQ</p>

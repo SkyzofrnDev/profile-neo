@@ -42,10 +42,10 @@ const Home = () => {
       </div>
       {(isDesktop) && <Approach />}
       {(isMobile|| isTablet) && <ApproachMobile />}
-      <Ratings />
-      <div id="portofolio">
+      {/* <Ratings /> */}
+      {/* <div id="portofolio">
         <Portofolio />
-      </div>
+      </div> */}
       {(isDesktop) && <Start />}
       {(isMobile|| isTablet) && <StartMobile/>}
       <div id="contact" className="-scroll-mt-28">

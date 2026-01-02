@@ -58,7 +58,7 @@ const About = () => {
             <img
               src="hero-img.png"
               alt="neo-profile"
-              className="w-1/3 rounded-4xl"
+              className="w-1/3 rounded-4xl object-cover"
             />
           )}
         </div>
@@ -71,7 +71,7 @@ const About = () => {
             <div>
               <img
                 src="/CompanyFam/2.webp"
-                className="rounded-lg lg:h-96 w-full object-cover bg-center"
+                className="rounded-lg lg:h-96 w-full object-cover max-h-80"
                 loading="lazy"
               ></img>
             </div>
@@ -95,8 +95,8 @@ const About = () => {
             className="scroll-mt-28 py-8 lg:py-10 px-8 lg:px-14 flex flex-col gap-y-5 lg:gap-y-10 bg-white rounded-4xl "
           >
             <img
-              src="/CompanyFam/WebDev.webp"
-              className="rounded-lg lg:h-96 w-full object-cover"
+              src="/CompanyFam/edu.webp"
+              className="rounded-lg lg:h-96 w-full object-cover max-h-80"
               loading="lazy"
             ></img>
             <div className="flex items-center gap-x-10">

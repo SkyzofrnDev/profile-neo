@@ -4,7 +4,7 @@ import { LiquidGlass } from "../../Components/LiquidGlass/LiquidGlass";
 
 const StartMobile = () => {
   return (
-    <div className="bg-[url(./CompanyFam/WebDev.webp)] bg-fixed bg-cover flex w-full h-fit bg-center ">
+    <div className="mt-20 bg-[url(./CompanyFam/WebDev.webp)] bg-fixed bg-cover flex w-full h-fit bg-center ">
       <div className="bg-black/40 flex-col px-7 gap-y-10 flex items-center py-10 w-full">
         <LiquidGlass
           radius={15}

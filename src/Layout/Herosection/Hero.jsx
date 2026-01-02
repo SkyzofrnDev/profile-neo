@@ -82,10 +82,10 @@ const Hero = () => {
         </p>
         <div className="flex flex-wrap lg:mt-10 gap-x-5 md:mb-10">
           <div data-aos="fade-up" data-aos-delay="200">
-            <Button bg="bg-primary" text="Penawaran" />
+            <Button bg="bg-primary" text="Penawaran" to={"https://instagram.com/neooneid"} />
           </div>
           <div data-aos="fade-up" data-aos-delay="100">
-            <Button bg="bg-tertiary" text="Mulai Digital" to={"https://wa.me/6281234567890?text=Halo"} />
+            <Button bg="bg-tertiary" text="Mulai Digital" to={"https://wa.me/6281936778959?text=Halo+kami+tertarik+dengan+jasa+anda"} />
           </div>
         </div>
       </div>

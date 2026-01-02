@@ -22,7 +22,7 @@ const steps = [
     icon: "/Icon/Collab.svg",
     iconClass: "w-12 h-12",
   },
-];
+]; 
 
 const Approach = () => {
   return (
@@ -31,13 +31,7 @@ const Approach = () => {
         Pendekatan kami pada klien
       </h2>
 
-      {/* Wrapper steps */}
       <div className="mt-12 lg:mt-20 w-full max-w-9xl">
-        {/* 
-          - Mobile: stack (1 kolom)
-          - md: 2 kolom
-          - lg: 3 kolom
-        */}
         <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-20">
           {steps.map((s, idx) => (
             <div key={s.id} className="relative flex flex-col items-center">

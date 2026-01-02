@@ -10,16 +10,16 @@ export const routesConfig = [
   {
     path: "/home",
     element: <Home />,
-    maintenance: true, 
+    maintenance: false, 
   },
   {
     path: "/about",
     element: <About />,
-    maintenance: true,
+    maintenance: false,
   },
   {
     path: "/test",
     element: <About />,
-    maintenance: true,
+    maintenance: false,
   },
 ];
