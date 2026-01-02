@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 
 const breakpoints = {
   mobile: '(max-width: 639px)',  
-  tablet: '(min-width: 640px) and (max-width: 1099px)', 
-  desktop: '(min-width: 1100px)',
+  tablet: '(min-width: 640px) and (max-width: 1023px)', 
+  desktop: '(min-width: 1024px)',
 };
 
 const useBreakpoint = () => {

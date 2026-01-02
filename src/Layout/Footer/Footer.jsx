@@ -14,7 +14,7 @@ const Footer = () => {
         </p>
       </div>
       <div>
-        <ul className="flex gap-5 lg:gap-20 lg:ml-10 mt-5 text-lg lg:text-xl">
+        <ul className="flex gap-5 lg:gap-20 lg:ml-10 mt-5 text-base md:text-lg lg:text-xl">
           <Link to={"/#home"}>Home</Link>
           <Link to={"/#about"}>About</Link>
           <Link to={"/#portofolio"}>Project</Link>

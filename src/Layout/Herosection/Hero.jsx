@@ -27,15 +27,15 @@ const Hero = () => {
   }, [hash]);
 
   return (
-    <div className="md:flex-row items-center h-screen  px-7 lg:px-0 flex lg:ml-24">
+    <div className="md:flex-row items-center h-screen px-7 lg:px-0 flex lg:ml-10 xl:ml-24">
       <div className="flex flex-col gap-y-5 lg:w-3/5 lg:pr-20">
         <img
           data-aos="fade-down"
           src="/neo.svg"
           alt="neo-logo"
-          className="hidden object-fit lg:block w-20 xl:w-44 2xl:w-56 xl:my-14 2xl:my-18 my-5 md:my-10"
+          className="hidden object-fit lg:block w-20 xl:w-44 2xl:w-56 xl:my-14 2xl:my-14 my-5 md:my-10"
         />
-        <p className="text-5xl md:text-6xl lg:text-6xl xl:text-6xl 2xl:text-8xl text-default font-bold leading-tight jakarta">
+        <p className="text-5xl md:text-6xl lg:text-6xl xl:text-6xl 2xl:text-7xl text-default font-bold leading-tight jakarta">
           <span data-aos="fade-up" data-aos-delay="0" className="inline-block">
             Bring your
           </span>{" "}
@@ -73,7 +73,7 @@ const Hero = () => {
         <p
           data-aos="fade"
           data-aos-delay="900"
-          className="text-md mt-3 xl:text-xl 2xl:text-4xl lg:mt-3 leading-normal"
+          className="text-md mt-3 xl:text-xl 2xl:text-2xl lg:mt-3 leading-normal"
         >
           Kami menyediakan solusi untuk kebutuhan digital anda dengan{" "}
           <span className="text-primary">professional</span>{" "}
@@ -90,7 +90,7 @@ const Hero = () => {
         </div>
       </div>
       {(isDesktop || isTablet) && (
-        <div className="w-2/3 hidden xl:flex h-screen">
+        <div className="w-2/3 hidden lg:flex h-screen">
           <img
             data-aos-delay="0.01 "
             data-aos="fade"
